@@ -17,8 +17,8 @@ p.add_argument('-i','--ignore-requirements', action='store_true', help="allow ma
 p.add_argument('-r','--reduce-rems', action='store_true', help="only use tier 1 Reminiscence cards")
 p.add_argument('-S','--force-beer-stand', action='store_true', help="make 'Beer Stand' building always appear alongside Beer")
 p.add_argument('-T','--force-trial', action='store_true', help="make 'Trial' event always appear alongside Meet-Ups")
-p.add_argument('-b','--min-buildings', type=int, default=3, help="attempt to have at least this many buildings, where buildings appear (default 3)")
-p.add_argument('-e','--min-events', type=int, default=3, help="attempt to have at least this many events, where events appear (default 3)")
+p.add_argument('-b','--buildings', type=int, default=3, help="choose this many buildings, where buildings appear (default 3)")
+p.add_argument('-e','--events', type=int, default=3, help="choose this many events, where events appear (default 3)")
 p.add_argument('-o','--min-optional-rules', type=int, default=2, help="attempt to have at least this many optional mechanics (default 2)")
 p.add_argument('-p','--max-private-maids', type=int, default=100, help="maximum size of Private Maid deck")
 p.add_argument('-c','--crescent-sisters', type=int, default=0, choices=[0, 2, 3], help="ensure at least this many Crescent sisters appear, if any appear (default 0, which applies no restrictions)")
@@ -38,8 +38,8 @@ rule_beer_stand_always_included=args.force_beer_stand
 rule_ignore_maid_requirements=args.ignore_requirements
 rule_reduced_reminiscences=args.reduce_rems
 rule_min_extras=args.min_optional_rules
-rule_number_of_buildings=args.min_buildings
-rule_number_of_events=args.min_events
+rule_number_of_buildings=args.buildings
+rule_number_of_events=args.events
 rule_max_private_maids=args.max_private_maids
 rule_crescent_sisters=args.crescent_sisters
 
