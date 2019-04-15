@@ -6,7 +6,7 @@ import random
 import argparse
 import sys
 
-debug=True
+debug=False
 
 # argparse
 p=argparse.ArgumentParser(description='Make a random Tanto Cuore game.')
