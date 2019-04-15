@@ -101,7 +101,7 @@ it to the pool of potential buildings using an option.
 The Drama deck is only included when Dermot Gherin is chosen. This is not considered a full mechanic in its own right,
 as it is linked to a single butler card.
 
-### Options:
+## Options:
 Brief help can be viewed using the `-h` flag.
 
 - `-a`, `--optional-chapel`: By default, the Chapel will always appear where Meet Ups are used. This flags disables that
